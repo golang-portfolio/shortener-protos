@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package shortenerAuth;
 
-option go_package = 'github.com/golang-portfolio/shortener-protos;shortenerAuthV2';
+option go_package = 'github.com/golang-portfolio/shortener-protos;shortenerAuth';
 
 service  Auth {
   rpc Register (RegisterRequest) returns (RegisterResponse);

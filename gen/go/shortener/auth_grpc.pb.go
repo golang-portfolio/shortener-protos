@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v5.27.3
-// source: sso/sso.proto
+// source: shortener/auth.proto
 
-package shortenerAuthV2
+package shortenerAuth
 
 import (
 	context "context"
@@ -193,5 +193,5 @@ var Auth_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "sso/sso.proto",
+	Metadata: "shortener/auth.proto",
 }
