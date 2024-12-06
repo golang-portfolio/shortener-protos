@@ -4,7 +4,7 @@
 // - protoc             v5.27.3
 // source: sso/sso.proto
 
-package shortener_protos
+package shortener_auth_v1
 
 import (
 	context "context"
@@ -19,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	Auth_Register_FullMethodName = "/sso.Auth/Register"
-	Auth_Login_FullMethodName    = "/sso.Auth/Login"
-	Auth_IsAdmin_FullMethodName  = "/sso.Auth/IsAdmin"
+	Auth_Register_FullMethodName = "/shortener_auth.Auth/Register"
+	Auth_Login_FullMethodName    = "/shortener_auth.Auth/Login"
+	Auth_IsAdmin_FullMethodName  = "/shortener_auth.Auth/IsAdmin"
 )
 
 // AuthClient is the client API for Auth service.
@@ -176,7 +176,7 @@ func _Auth_IsAdmin_Handler(srv interface{}, ctx context.Context, dec func(interf
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var Auth_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "sso.Auth",
+	ServiceName: "shortener_auth.Auth",
 	HandlerType: (*AuthServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
